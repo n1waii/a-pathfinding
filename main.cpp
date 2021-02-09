@@ -79,7 +79,7 @@ std::vector<nodeTemplate> getNeighbors(nodeTemplate node) {
     if (node.second != 0 && (grid[node.first][node.second-1] == 0 || grid[node.first][node.second-1] == 2)) { // West
         neighbors.push_back(std::make_pair(node.first, node.second-1));
     }
-    if (node.second != COLLUMNS && (grid[node.first][node.second+1] == 0 || grid[node.first][node.second+1] == 1)) { // East
+    if (node.second != COLLUMNS && (grid[node.first][node.second+1] == 0 || grid[node.first][node.second+1] == 2)) { // East
         neighbors.push_back(std::make_pair(node.first, node.second+1));
     }
     if (node.first != 0 && (grid[node.first-1][node.second] == 0 || grid[node.first-1][node.second] == 2)) { // North
@@ -161,6 +161,6 @@ std::vector<nodeTemplate> search() {
             }
         }
     }
-    std::cout << "no goal found\n";
+    std::cout << "No goal found\n";
     return std::vector<nodeTemplate>();
 }
