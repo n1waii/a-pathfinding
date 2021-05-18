@@ -1,5 +1,7 @@
 # A* Pathfinding
-Demonstration of A* search algorithm in C++.
-Implemented in the terminal.
+Demonstration of A* search algorithm in the terminal.
+Implemented in C++.
 
-Video Demonstration: https://streamable.com/gjjl5q
+Users can create obstacles using WASD and then press 'P' to start the algorithm
+
+Video Demonstration: https://streamable.com/2cmfg9
