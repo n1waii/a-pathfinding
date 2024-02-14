@@ -1,6 +1,5 @@
 /*
     A demonstration of the A* Search Algorithm.
-    All work is written by the author except C++ STD library functions.
 */
 
 #include <iostream>
